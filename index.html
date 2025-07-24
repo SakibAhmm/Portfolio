@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tailwind Test</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="tailwind.css" />
+      <style>
+    .slide {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+  </style>
+  </head>
+  <body class="font-nunito ">
+    <!-- intro section -->
+      
+    <div class=" h-full  sm:h-screen bg-gradient-to-t from-slate-500 dark:from-slate-800 dark:to-slate-700 relative overflow-hidden ">
+
+    <!-- navbar -->
+    <nav class=" w-full fixed top-0 bg-slate-300 z-10 dark:bg-slate-800">
+      <div class="container mx-auto -my-1 sm:-my-0 md:-my-3 lg:-my-4 flex justify-between items-center ">
+        <div class="flex items-center">
+          <img class="w-10 h-10 md:w-20 md:h-20" src="/images/Ahm-coding-logo (2).PNG" alt="" />
+          <span class="text-sm md:text-xl font-bold text-indigo-700 dark:text-slate-50">Portfolio</span>
+        </div>
+        <ul class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm uppercase">
+          <li class=" hover:text-black">
+            <a id="" href="#">home</a>
+          </li>
+          <li class=" hover:text-black">
+            <a id="" href="#about">about me</a>
+          </li>
+          <li class=" hover:text-black">
+            <a id="" href="#works">works</a>
+          </li>
+          <li class=" hover:text-black">
+            <a id="" href="#contact">contact</a>
+          </li>
+        </ul>
+        <img id="moon" class="hidden md:block w-5 h-5 cursor-pointer" src="/images/Half-moon-logo.png" alt="">
+        
+        <div id="bar" class="space-y-1 md:hidden cursor-pointer z-20">
+          <div  class="w-6 h-0.5 bg-black"></div>
+          <div  class="w-6 h-0.5 bg-black"></div>
+          <div  class="w-6 h-0.5 bg-black"></div>
+        </div>
+        <ul id="menu" class="hidden bg-slate-500 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-center text-white uppercase">
+          <li>
+            <a id="hLink" href="#">home</a>
+          </li>
+          <li>
+            <a id="hLink" href="#about">about me</a>
+          </li>
+          <li>
+            <a id="hLink" href="#works">works</a>
+          </li>
+          <li>
+            <a id="hLink" href="#contact">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- intro content -->
+    <!-- image -->
+    <img class=" absolute bottom-0 right-20  sm:left-72  md:right-80  lg:left-96  h-5/6  "src="/images/Sakib-Main.png" alt="">
+
+     <!-- circle -->
+      <div class=" lg:block relative  -bottom-1/3 right-0 left-20 mx-auto bg-blue-800 h-big w-big rounded-full -z-10 dark:bg-slate-500 "></div>
+     <!-- animated text -->
+      <div class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-15 md:text-4xl lg:left-15 lg:text-6xl xl:left-42 xl:text-6xl font-bold">
+        <span class="sm:text-2xl md:text-4xl lg:text-6xl text-gray-900 dark:text-gray-100 ">Welcome to</span>
+        <p id="text" class="sm:text-xl md:text-4xl lg:text-6xl text-red-500"></p>
+      </div>
+      <!-- texts -->
+      <div class="  md:absolute lg:flex lg:flex-col gpa-5 rounded-md shadow-lg shadow-red-600  top-0 bottom-0 m-auto right-10 bg-slate-200 p-4 h-fit w-1/3 dark:bg-slate-400 dark:shadow-slate-300">
+        <h1 class=" py-12 lg:py-2 sm:text-xl font-bold text-indigo-700">Hi, I am Sakib Ahmed</h1>
+        <p class="hidden sm:block ">I'm a passionate web developer with a simple background in creating dynamic,
+responsive, and user-friendly websites. I am a slow learner but I learn with
+dedication and hardworking. Proficient in HTML, CSS, JavaScript, and various
+web development frameworks (beginning stage), My expertise includes frontend development, back-end integration(learning).</p>
+        <a class="hidden sm:block bg-indigo-600 text-white text-xl p-3 w-fit rounded-lg mt-4" href="#contact">Hire me</a>
+      </div>
+     
+    </div>
+    <!-- about -->
+    <div id="about" class="bg-gradient-to-t from-slate-500 dark:bg-slate-900 px-10">
+      <div class="container mx-auto py-24 flex flex-col-reverse lg:flex-row items-center gap-20">
+      <!-- left -->
+       <div class="relative">
+        <!-- <img src="/images/Sakib-Main.png" alt=""> -->
+        <div class=" mt-24 h-96 w-96 rounded-full overflow-hidden">
+          <img class="" src="/images/Sakib-2.jpg" alt="">
+        </div>
+       </div>
+       <!-- right -->
+       <div class=" my-auto flex flex-col gap-3">
+       <h1 class="text-indigo-600 font-bold text-4xl">ABOUT ME</h1>
+       <h1 class="text-2xl font-medium dark:text-gray-100 ">Better Design</h1>
+       <h1 class="text-2xl font-medium dark:text-gray-100">Better Experience</h1>
+
+       <p class="text-gray-500 dark:text-gray-400"> Sir, I am trying my best okay!! hiring me is your duty to make me successful in life, So do this kid a favour. I will try not to disappoint you.
+       </p>
+      <h2 class="text-gray-700 font-medium dark:text-gray-100">HTML/CSS</h2>
+      <div class="w-full bg-slate-300 h-1.5 rounded-md">
+        <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+      </div>
+
+      <h2 class="text-gray-700 font-medium dark:text-gray-100">JavaScript</h2>
+      <div class="w-full bg-slate-200 h-1.5 rounded-md">
+        <div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div>
+      </div>
+
+      <h2 class="text-gray-700 font-medium dark:text-gray-100">React</h2>
+      <div class="w-full bg-slate-200 h-1.5 rounded-md">
+        <div class="w-5/12 bg-indigo-600 h-1.5 rounded-md"></div>
+      </div>
+
+       <h2 class="text-gray-700 font-medium dark:text-gray-100">Gaming</h2>
+      <div class="w-full bg-slate-300 h-1.5 rounded-md">
+        <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+      </div>
+
+       <h2 class="text-gray-700 font-medium dark:text-gray-100">Editing</h2>
+      <div class="w-full bg-slate-300 h-1.5 rounded-md">
+        <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+      </div>
+
+      </div>
+    </div>
+    <!-- skills -->
+    <div id="" class="py-5 -mx-12 bg-gradient-to-t from-slate-500 dark:bg-slate-900">
+      <div class="container mx-auto">
+        <!-- top -->
+         <div class="flex flex-col gap-3 items-center">
+        <h1 class="text-indigo-800 font-bold text-4xl">Skills</h1>
+        <h1 class="text-3xl dark:text-gray-100">What do i offer?</h1>
+        <p class=" w-1/2 text-center text-gray-800">Thing's i've done in the past few months, and still learning</p>
+        </div>
+        <!-- bottom -->
+         <div class="p-12 flex flex-wrap ">
+          <!-- cards -->
+           <div class=" w-full md:w-4/12 shadow-2xl rounded-lg p-5 flex flex-col gap-3">
+            <div class="flex flex-row gap-3">
+             <img class="w-10" src="/images/html-16-svgrepo-com.png" alt="">
+             <img class="w-10" src="/images/css-16-svgrepo-com.png" alt="">
+            </div>
+            <h1 class="font-medium text-lg dark:text-gray-300">HTML/CSS</h1>
+            <div class="h-full flex flex-col justify-between">
+            <p class=" dark:text-gray-300">"I have a solid understanding of the fundamental principles of HTML and CSS, and I’m confident in using them to build clean, responsive web pages. I’ve developed a good proficiency in writing semantic HTML and styling with modern CSS practices."</p>
+            <a class="text-indigo-800 font-bold text-sm dark:text-yellow-300 " href="">Read More</a>
+          </div>    
+           </div>
+
+           <!-- cards -->
+           <div class=" w-full md:w-4/12 shadow-2xl rounded-lg p-5 flex flex-col gap-3">
+             <img class="w-10" src="/images/javascript-16-svgrepo-com.png" alt="">
+            <h1 class="font-medium text-lg dark:text-gray-300">JavaScript</h1>
+            <div class="h-full flex flex-col justify-between">
+            <p class="dark:text-gray-300">"I’ve started learning JavaScript and have a basic understanding of how it works. I'm currently exploring its core concepts to enhance my web development skills."</p>
+            <a class="text-indigo-800 font-bold text-sm dark:text-yellow-300" href="">Read More</a>
+          </div>    
+           </div>
+
+           <!-- cards -->
+           <div class=" w-full md:w-4/12 shadow-2xl rounded-lg p-5 flex flex-col gap-3">
+             <img class="w-10" src="/images/figma-svgrepo-com.png" alt="">
+            <h1 class="font-medium text-lg dark:text-gray-300">UX / UI Design(Figma)</h1>
+            <div class="h-full flex flex-col justify-between">
+            <p class="dark:text-gray-300">"Although I’m still in the early stages of learning UI/UX design, I’ve begun using Figma to create simple interfaces and understand design principles. I’m eager to keep learning and growing in this field."</p>
+            <a class="text-indigo-800 font-bold text-sm dark:text-yellow-300" href="">Read More</a>
+          </div>    
+           </div>
+
+           <!-- cards -->
+           <div class=" w-full md:w-4/12 shadow-2xl rounded-lg p-5 flex flex-col gap-3">
+             <img class="w-10" src="/images/react-svgrepo-com.png" alt="">
+            <h1 class="font-medium text-lg dark:text-gray-300">React</h1>
+            <div class="h-full flex flex-col justify-between">
+            <p class="dark:text-gray-300">"While I’m still new to React.js, I’ve begun to understand its core concepts like components and props. I’m actively practising by building small projects to strengthen my skills."</p>
+            <a class="text-indigo-800 font-bold text-sm dark:text-yellow-300" href="">Read More</a>
+          </div>    
+           </div> 
+
+           <!-- cards -->
+           <div class=" w-full md:w-4/12 shadow-2xl rounded-lg p-5 flex flex-col gap-3">
+             <img class="w-10" src="/images/adobe-pr-svgrepo-com.png" alt="">
+            <h1 class="font-medium text-lg dark:text-gray-300">Video Editing</h1>
+            <div class="h-full flex flex-col justify-between">
+            <p class="dark:text-gray-300">"Video editing is one of my favourite hobbies. I’ve explored editing with both Premiere Pro and CapCut, and I enjoy creating engaging videos by experimenting with cuts, transitions, and effects. I’m still learning and improving, but I’m confident in handling basic to intermediate editing tasks."</p>
+            <a class="text-indigo-800 font-bold text-sm dark:text-yellow-300" href="">Read More</a> 
+          </div>   
+           </div>
+
+           <!-- cards -->
+           <div class=" w-full md:w-4/12 shadow-2xl rounded-lg p-5 flex flex-col gap-3">
+             <img class="w-10" src="/images/gaming-controller-gamepad-joystick-game-console-svgrepo-com.png" alt="">
+            <h1 class="font-medium text-lg dark:text-gray-300">Gaming</h1>
+            <div class="h-full flex flex-col justify-between">
+            <p class="dark:text-gray-300">"Gaming is one of my biggest hobbies. I love exploring different genres and sharing my gameplay experiences on my YouTube channel, Ahm's Desert. I enjoy editing and uploading content regularly, combining my interest in gaming and video editing. If you're into gaming content, feel free to check out my channel and consider subscribing!"</p>
+            <a class="text-indigo-800 font-bold text-sm dark:text-yellow-300" href="">Read More</a>
+          </div>   
+           </div>
+
+
+         </div>
+      </div>
+    </div>
+    <!-- Works -->
+     <div id="works" class="-mx-12 py-10 bg-gradient-to-t from-slate-500 dark:dark:bg-slate-900">
+      <div class="">
+            <div class="flex flex-col gap-3 items-center ">
+        <h1 class="text-indigo-800 text-4xl font-bold">Works</h1>
+        <p class=" w-1/2 text-center text-gray-400 py-4">Some basic works, projects</p>
+        </div>
+        <!-- Slider -->
+        <div class="relative w-full max-w-xl mx-auto overflow-hidden rounded-xl shadow-lg">
+  <!-- Slides -->
+ <div class="relative w-full max-w-6xl mx-auto overflow-hidden rounded-xl shadow-lg">
+  <!-- Slides -->
+  <div class="slider relative">
+    <div class="slide active relative">
+      <img src="images/Rock,paper game.png" alt="Slide 1" class="w-full h-[400px] object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+        <a class="text-gray-300 text-2xl md:text-2xl underline font-bold z-10 hover:text-blue-800" href="https://sakibahmm.github.io/Rock-Paper-Scissors-Game/">Rock Paper Scissor Game</a>
+
+      </div>
+    </div>
+
+    <div class="slide hidden relative">
+      <img src="images/to-dolist.png" alt="Slide 2" class="w-full h-[400px] object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+        <a class="text-black text-2xl md:text-2xl underline z-10 cursor-pointer hover:text-blue-700 font-bold">To Do-List</a>
+      </div>
+    </div>
+
+    <div class="slide hidden relative">
+      <img src="/images/Buchu3.jpg" alt="Slide 3" class="w-full h-[400px] object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+        <a href="/Buchu/buchu.html" class="text-white text-2xl md:text-2xl font-bold underline cursor-pointer z-10 hover:text-pink-400 ">Images of Buchu!</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <div class="absolute inset-0 flex justify-between items-center px-4">
+    <button onclick="changeSlide(-1)" class="bg-slate-200 text-black px-3 py-1 rounded hover:bg-gray-600">❮</button>
+    <button onclick="changeSlide(1)" class="bg-slate-200 text-black px-3 py-1 rounded hover:bg-gray-600">❯</button>
+  </div>
+
+  <!-- Dots -->
+  <div class="flex justify-center space-x-2 mt-4">
+    <button class="dot w-3 h-3 rounded-full bg-gray-400 hover:bg-gray-600" onclick="goToSlide(0)"></button>
+    <button class="dot w-3 h-3 rounded-full bg-gray-400 hover:bg-gray-600" onclick="goToSlide(1)"></button>
+    <button class="dot w-3 h-3 rounded-full bg-gray-400 hover:bg-gray-600" onclick="goToSlide(2)"></button>
+  </div>
+</div>
+<!-- slider Ends -->
+        </div>
+
+      </div>
+
+     </div>
+     <!-- contact -->
+      <div id="contact" class="py-10 -mx-12 bg-gradient-to-t from-slate-500 dark:dark:bg-slate-900">
+        <div class="container mx-auto"></div>
+        <!-- top -->
+         <div class="flex flex-col gap-3 items-center">
+        <h1 class="text-indigo-800 font-bold text-4xl">Contact</h1>
+        <h1 class="text-3xl dark:text-gray-100">Have any question?</h1>
+        <p class=" w-1/2 text-center text-gray-800 dark:text-gray-100">Do you have any idea? Let's discuss it and see what we can do!</p>
+        </div>
+        <!-- bottom -->
+         <form class="mt-5 p-8 flex flex-col gap-5 items-center" action="">
+          <input class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-2 dark:text-gray-100" type="text" placeholder="Your Full Name">
+          <input class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-2 dark:text-gray-100" type="email" placeholder="Your Email">
+          <textarea class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-2 dark:text-gray-100" cols="30" rows="10" placeholder="Message..."></textarea>
+          <button class="w-1/2 bg-indigo-500 text-yellow-50 font-medium px-3 py-2 cursor-pointer rounded-md hover:bg-indigo-700">Submit</button>
+         </form>
+      </div>  
+    </div>
+      <!--footer -->
+    <div>
+      
+      <div class=" flex justify-center gap-3 w-full  bg-indigo-600 dark:bg-slate-700 "><span class="dark:text-gray-100">&copy; 2025 Portfolio. Designed by Ahm</span> 
+        
+          <img class="h-6" src="images/facebook-svgrepo-com (1).png" alt="">
+        <a href="https://www.instagram.com/sakib_ahm___/?hl=en"><img class="h-6" src="/images/insta-svgrepo-com.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/sakib-ahmed123/"><img class="h-6" src="/images/internet-linkedln-media-svgrepo-com.png" alt=""></a>
+        <a href="https://github.com/SakibAhmm"><img class="h-6" src="/images/github-svgrepo-com.png" alt=""></a>
+        <a href="https://www.youtube.com/@AhmsDesert"><img class="h-6" src="/images/youtube-svgrepo-com.png" alt=""></a>
+      </div>
+
+      
+    </div>
+    <script src="click.js"></script>
+    <script src="autotyping.js"></script>
+    <script src="slider.js"></script>
+  </body>
+</html>
